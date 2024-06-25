@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.pageBackground {
+  background-image: repeating-linear-gradient(135deg, rgba(133, 133, 133, 0.09) 0px, rgba(133, 133, 133, 0.09) 1px, transparent 1px, transparent 11px), repeating-linear-gradient(45deg, rgba(133, 133, 133, 0.09) 0px, rgba(133, 133, 133, 0.09) 1px, transparent 1px, transparent 11px), linear-gradient(90deg, rgb(50, 60, 79), rgb(50, 60, 79));
+}
+
+::-webkit-scrollbar {
+  width: 0.5em;
+  background-color: #323C4F;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #242b36;
+  border-radius: 5px;
+}
+
+.spinner {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+      transform: rotate(0deg);
+  }
+
+  100% {
+      transform: rotate(360deg);
+  }
+} 
